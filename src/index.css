@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Alex Brush", cursive;
+  
+  --color-gold-50: #FAF6EF;
+  --color-gold-100: #F3EBDC;
+  --color-gold-200: #E7D5BA;
+  --color-gold-300: #D8BD95;
+  --color-gold-400: #C5A880;
+  --color-gold-500: #B89666;
+  --color-gold-600: #9E7D4E;
+  --color-gold-700: #7C603A;
+  
+  --color-noir-950: #07080A;
+  --color-noir-900: #0B0C0E;
+  --color-noir-850: #101216;
+  --color-noir-800: #14171E;
+  --color-noir-700: #1C2029;
+  --color-noir-600: #262B37;
+}
+
+/* Custom scrollbar and aesthetic styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0C0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #262B37;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0B0C0E;
+  color: #E0E2E7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT MODE: LUXURY SOFT CREAM & CHARCOAL PALETTE */
+html.theme-light,
+.theme-light {
+  color-scheme: light;
+}
+
+.theme-light,
+.theme-light body {
+  background-color: #F8F6F0 !important;
+  color: #1E222B !important;
+}
+
+/* Base backgrounds mapped to soft cream & ivory */
+.theme-light [class*="bg-[#07080A]"],
+.theme-light [class*="bg-[#0B0C0E]"],
+.theme-light [class*="bg-[#0A0C0E]"],
+.theme-light [class*="bg-[#0B0D12]"] {
+  background-color: #F8F6F0 !important;
+}
+
+.theme-light [class*="bg-[#0E1117]"],
+.theme-light [class*="bg-[#11141A]"],
+.theme-light [class*="bg-[#101319]"],
+.theme-light [class*="bg-[#12151B]"],
+.theme-light [class*="bg-[#0F1116]"],
+.theme-light [class*="bg-[#0F1218]"],
+.theme-light [class*="bg-[#121620]"] {
+  background-color: #FFFFFF !important;
+}
+
+.theme-light [class*="bg-[#141822]"],
+.theme-light [class*="bg-[#151922]"],
+.theme-light [class*="bg-[#151923]"],
+.theme-light [class*="bg-[#151924]"],
+.theme-light [class*="bg-[#161B26]"],
+.theme-light [class*="bg-[#171C27]"],
+.theme-light [class*="bg-[#181C24]"],
+.theme-light [class*="bg-[#14171E]"] {
+  background-color: #F1EDE4 !important;
+}
+
+.theme-light [class*="bg-[#1A1F2C]"],
+.theme-light [class*="bg-[#1C212E]"],
+.theme-light [class*="bg-[#1C2230]"],
+.theme-light [class*="bg-[#141720]"],
+.theme-light [class*="bg-[#161A26]"],
+.theme-light [class*="bg-[#1E2434]"],
+.theme-light [class*="bg-[#1C2232]"] {
+  background-color: #E8E3D7 !important;
+}
+
+/* Borders overridden to warm cream/charcoal */
+.theme-light [class*="border-[#202533]"],
+.theme-light [class*="border-[#222631]"],
+.theme-light [class*="border-[#202532]"],
+.theme-light [class*="border-[#232938]"],
+.theme-light [class*="border-[#242A3A]"],
+.theme-light [class*="border-[#242937]"],
+.theme-light [class*="border-[#262C3C]"],
+.theme-light [class*="border-[#262D3E]"],
+.theme-light [class*="border-[#1C2029]"],
+.theme-light [class*="border-[#1C2230]"],
+.theme-light [class*="border-[#23293A]"],
+.theme-light [class*="border-[#1E222B]"],
+.theme-light [class*="border-[#1E2330]"],
+.theme-light [class*="border-[#232A3B]"],
+.theme-light [class*="border-[#202636]"],
+.theme-light [class*="border-[#2A2E39]"],
+.theme-light [class*="border-[#1C202A]"],
+.theme-light [class*="border-white/10"],
+.theme-light [class*="border-white/15"],
+.theme-light [class*="border-white/20"] {
+  border-color: #DFD8CB !important;
+}
+
+/* Primary text to rich charcoal */
+.theme-light [class*="text-[#EDE8DF]"],
+.theme-light [class*="text-[#E0E2E7]"],
+.theme-light [class*="text-white"]:not(.keep-white) {
+  color: #16191F !important;
+}
+
+/* Secondary text to medium charcoal */
+.theme-light [class*="text-[#8E94A4]"],
+.theme-light [class*="text-[#8A90A0]"],
+.theme-light [class*="text-[#8D93A1]"],
+.theme-light [class*="text-[#9DA2B0]"],
+.theme-light [class*="text-[#9A9FA9]"],
+.theme-light [class*="text-[#A0A5B2]"],
+.theme-light [class*="text-[#A6ACB8]"],
+.theme-light [class*="text-[#7A808E]"],
+.theme-light [class*="text-[#787F90]"],
+.theme-light [class*="text-[#72798A]"],
+.theme-light [class*="text-[#9EA5B5]"],
+.theme-light [class*="text-[#7D8494]"],
+.theme-light [class*="text-[#8E95A5]"] {
+  color: #4A5162 !important;
+}
+
+.theme-light [class*="text-[#656D7F]"],
+.theme-light [class*="text-[#606778]"],
+.theme-light [class*="text-[#555C6D]"],
+.theme-light [class*="text-[#5D6372]"],
+.theme-light [class*="text-[#6E7585]"],
+.theme-light [class*="text-[#6A7182]"],
+.theme-light [class*="text-[#5E6575]"] {
+  color: #6C7486 !important;
+}
+
+/* Accent gold tone in light mode (warm deep bronze gold) */
+.theme-light [class*="text-[#C5A880]"],
+.theme-light [class*="text-[#DFBA73]"],
+.theme-light [class*="text-[#E5C38C]"] {
+  color: #9A743E !important;
+}
+
+/* Hero overlay and dark backdrop gradients in light mode */
+.theme-light #fullscreen-hero .absolute.inset-0.bg-gradient-to-t {
+  background: linear-gradient(to top, #F8F6F0 0%, rgba(248, 246, 240, 0.72) 50%, rgba(248, 246, 240, 0.88) 100%) !important;
+}
+.theme-light #fullscreen-hero .absolute.inset-0.bg-gradient-to-r {
+  background: linear-gradient(to right, rgba(248, 246, 240, 0.94) 0%, rgba(248, 246, 240, 0.68) 50%, rgba(248, 246, 240, 0.35) 100%) !important;
+}
+
+/* Modals and chat window backdrop in light mode */
+.theme-light .fixed.inset-0.bg-black\/85,
+.theme-light .fixed.inset-0.bg-black\/90,
+.theme-light .fixed.inset-0.bg-black\/60 {
+  background-color: rgba(22, 25, 31, 0.58) !important;
+}
+
+/* Shadows in light mode: rich soft charcoal elevation */
+.theme-light .shadow-2xl,
+.theme-light .shadow-xl {
+  box-shadow: 0 16px 36px -8px rgba(22, 25, 31, 0.12), 0 0 1px rgba(22, 25, 31, 0.16) !important;
+}
+
+/* Inputs and select styling in light mode */
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  background-color: #F4EFE5 !important;
+  border-color: #D6CEC0 !important;
+  color: #16191F !important;
+}
+
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #828B9C !important;
+}
+
+/* Scrollbar in light mode */
+.theme-light ::-webkit-scrollbar-track {
+  background: #F1EDE4;
+}
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #D4CDBC;
+}
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #9A743E;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Fortvíde Luxury Real Estate",
+  "description": "Exclusive luxury real estate marketplace featuring curated penthouses, estates, and architectural plots with private viewings and portfolio management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
